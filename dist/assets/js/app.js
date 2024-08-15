@@ -901,4 +901,31 @@ window.addEventListener("DOMContentLoaded", () => {
 
 
     document.body.classList.add('page-loaded');
+
+    let animationId;
+
+    function smoothScroll() {
+        document.documentElement.style.setProperty('scroll-behavior', 'auto');
+
+        function scroll() {
+            window.scrollBy(0, 6);
+            
+            animationId = requestAnimationFrame(scroll); 
+        }
+
+        scroll();
+    }
+
+    window.addEventListener('keydown', (e) => {
+        if (e.key === 'ArrowDown') {
+            e.preventDefault();
+            smoothScroll();
+        }
+
+        if(e.key === 'ArrowUp') {
+            e.preventDefault();
+            cancelAnimationFrame(animationId);
+            animationId = null; 
+        }
+    });
 }); 

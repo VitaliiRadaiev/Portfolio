@@ -78,6 +78,58 @@
             "linkToGitHub": "https://github.com/VitaliiRadaiev/VATKIN.git",
             "linkToLiveSite": "https://vatkin.art/",
             "stackList": ["Html", "Css", "JavaScript"]
+        },
+        {   
+            "imageSrc": "assets/images/Werkah.jpg",
+            "videoSrc": "assets/videos/werkah_854x480.mp4",
+            "linkToHome": "https://vitaliiradaiev.github.io/Werkah/dist/",
+            "linkToAllPages": "https://vitaliiradaiev.github.io/Werkah/dist/contentPage.html",
+            "linkToGitHub": "https://github.com/VitaliiRadaiev/Werkah.git",
+            "linkToLiveSite": "https://www.werkah.nl/",
+            "stackList": ["Html", "Css", "JavaScript", "Tailwind"]
+        },
+        {   
+            "imageSrc": "assets/images/Wevig.jpg",
+            "videoSrc": "assets/videos/Wevig_854x480.mp4",
+            "linkToHome": "https://vitaliiradaiev.github.io/Wevig/dist/",
+            "linkToAllPages": "https://vitaliiradaiev.github.io/Wevig/dist/contentPage.html",
+            "linkToGitHub": "https://github.com/VitaliiRadaiev/Wevig.git",
+            "linkToLiveSite": "https://www.wevig.at/",
+            "stackList": ["Html", "Css", "JavaScript"]
+        },
+        {   
+            "imageSrc": "assets/images/C4B.jpg",
+            "videoSrc": "assets/videos/C4B_854x480.mp4",
+            "linkToHome": "https://vitaliiradaiev.github.io/C4B/dist/",
+            "linkToAllPages": "https://vitaliiradaiev.github.io/C4B/dist/contentPage.html",
+            "linkToGitHub": "https://github.com/VitaliiRadaiev/C4B.git",
+            "linkToLiveSite": "https://trittsteinbiotope.at/",
+            "stackList": ["Html", "Css", "JavaScript"]
+        },
+        {   
+            "imageSrc": "assets/images/Purposes.jpg",
+            "videoSrc": "assets/videos/Purposes_854x480.mp4",
+            "linkToHome": "https://vitaliiradaiev.github.io/Purpose/dist/",
+            "linkToAllPages": "https://vitaliiradaiev.github.io/Purpose/dist/contentPage.html",
+            "linkToGitHub": "https://github.com/VitaliiRadaiev/Purpose.git",
+            "stackList": ["Html", "Css", "JavaScript"]
+        },
+        {   
+            "imageSrc": "assets/images/Retail.jpg",
+            "videoSrc": "assets/videos/Retail_854x480.mp4",
+            "linkToHome": "https://vitaliiradaiev.github.io/RetailActive/dist/",
+            "linkToAllPages": "https://vitaliiradaiev.github.io/RetailActive/dist/contentPage.html",
+            "linkToGitHub": "https://github.com/VitaliiRadaiev/RetailActive.git",
+            "stackList": ["Html", "Css", "JavaScript"]
+        },
+        {   
+            "imageSrc": "assets/images/Rinos.jpg",
+            "videoSrc": "assets/videos/Rinos_854x480.mp4",
+            "linkToHome": "https://vitaliiradaiev.github.io/Rinos/dist/",
+            "linkToAllPages": "https://vitaliiradaiev.github.io/Rinos/dist/contentPage.html",
+            "linkToGitHub": "https://github.com/VitaliiRadaiev/Rinos.git",
+            "linkToLiveSite": "https://rinos.com/",
+            "stackList": ["Html", "Css", "JavaScript"]
         }
     ]
 }

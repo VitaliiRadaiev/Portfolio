@@ -1,0 +1,18 @@
+.overflow-hidden {
+    overflow: hidden;
+}
+
+.hidden {
+    display: none;
+}
+
+.last-no-margin {
+    & >:last-child {
+        margin-bottom: 0;
+    }
+}
+.first-no-margin {
+    & >:first-child {
+        margin-top: 0;
+    }
+}

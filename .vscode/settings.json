@@ -1,0 +1,18 @@
+{
+    "cSpell.enableFiletypes": [
+        "!asciidoc",
+        "!csharp"
+    ],
+    "files.associations": {
+        "*.css": "tailwindcss",
+    },
+    "editor.quickSuggestions": {
+        "strings": "on"
+    },
+    "tailwindCSS.includeLanguages": {
+        "plaintext": "html",
+        "html": "html",
+        "css": "css"
+    },
+    //"tailwindCSS.experimental.configFile": "./tailwind.config.js"
+}

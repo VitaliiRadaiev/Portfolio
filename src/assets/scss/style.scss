@@ -1,0 +1,30 @@
+@import "./tailwind";
+
+@import "./mixins.scss";
+
+@import "./fonts.scss";
+
+// plugins
+@import "./plugins/swiper-bundle.scss";
+// /= plugins
+
+@import "./vars.scss";
+
+@import "./utils.scss";
+
+@import "./main.scss";
+
+// components
+@import "../../components/text-content/text-content.scss";
+// /= components
+
+// sections
+@import "../../sections/header/header.scss";
+@import "../../sections/intro/intro.scss";
+@import "../../sections/stack/stack.scss";
+@import "../../sections/portfolio/portfolio.scss";
+// /= sections
+
+// ==== libs =====================================================
+@import "../../libs/spoiler/spoiler.scss";
+// ==== // libs =====================================================

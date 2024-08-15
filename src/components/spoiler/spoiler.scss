@@ -1,0 +1,67 @@
+ul[data-spoiler] {
+    & > li {
+        position: relative;
+
+        &:before {
+            position: absolute;
+            content: "";
+            left: 0;
+            bottom: 0;
+            height: 1px;
+            display: block;
+            width: 100%;
+            transform: translateY(50%);
+            background-color: var(--purple---super-light);
+        }
+    }
+}
+[data-spoiler-trigger] {
+    position: relative;
+    padding-left: 2.5rem;
+    min-height: 3.5rem;
+    display: flex;
+    align-items: center;
+    padding-right: 1rem;
+    transition: background-color .15s ease;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    cursor: pointer;
+
+    @media #{$mouse-device} {
+        &:hover {
+            background-color: var(--gray-100);
+        }
+    }
+
+    &:before {
+        position: absolute;
+        content: "\e90e";
+        font-family: "icomoon" !important;
+        speak: never;
+        font-style: normal;
+        font-weight: normal;
+        font-variant: normal;
+        text-transform: none;
+        line-height: 1;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        top: 50%;
+        left: 13.5px;
+        transform: translateY(-50%);
+        transition: transform 0.15s ease;
+    }
+
+    &.active {
+        &:before {
+            transform: translateY(-50%) scaleY(-1);
+        }
+    }
+
+    & + * {
+        display: none;
+        padding-top: 0;
+        padding-right: 1rem;
+        padding-left: 1rem;
+        padding-bottom: 1rem;
+    }
+}

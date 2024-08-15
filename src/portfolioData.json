@@ -1,0 +1,83 @@
+{
+    "data": [
+        {   
+            "imageSrc": "assets/images/altman.jpg",
+            "videoSrc": "assets/videos/altman.mp4",
+            "linkToHome": "https://vitaliiradaiev.github.io/Altman/dist/",
+            "linkToAllPages": "https://vitaliiradaiev.github.io/Altman/dist/contentPage.html",
+            "linkToGitHub": "https://github.com/VitaliiRadaiev/Altman.git",
+            "stackList": ["Html", "Css", "JavaScript", "Tailwind"]
+        },
+        {   
+            "imageSrc": "assets/images/magoom.jpg",
+            "videoSrc": "assets/videos/magoom.mp4",
+            "linkToHome": "https://vitaliiradaiev.github.io/Magoom/dist/",
+            "linkToAllPages": "https://vitaliiradaiev.github.io/Magoom/dist/contentPage.html",
+            "linkToGitHub": "https://github.com/VitaliiRadaiev/Magoom.git",
+            "linkToLiveSite": "https://magoom.com/",
+            "stackList": ["Html", "Css", "JavaScript"]
+        },
+        {   
+            "imageSrc": "assets/images/yos.jpg",
+            "videoSrc": "assets/videos/yos.mp4",
+            "linkToHome": "https://vitaliiradaiev.github.io/Yos/dist/",
+            "linkToAllPages": "https://vitaliiradaiev.github.io/Yos/dist/contentPage.html",
+            "linkToGitHub": "https://github.com/VitaliiRadaiev/Yos.git",
+            "linkToLiveSite": "https://yoscare.com.ua/",
+            "stackList": ["Html", "Css", "JavaScript"]
+        },
+        {   
+            "imageSrc": "assets/images/stories.jpg",
+            "videoSrc": "assets/videos/stories.mp4",
+            "linkToHome": "https://vitaliiradaiev.github.io/StoriesHtml/dist/",
+            "linkToAllPages": "https://vitaliiradaiev.github.io/StoriesHtml/dist/",
+            "linkToGitHub": "https://github.com/VitaliiRadaiev/StoriesHtml.git",
+            "stackList": ["Html", "Css", "JavaScript"]
+        },
+        {   
+            "imageSrc": "assets/images/IT-Vision.jpg",
+            "videoSrc": "assets/videos/it-vis.mp4",
+            "linkToHome": "https://vitaliiradaiev.github.io/IT-Vision/dist/",
+            "linkToAllPages": "https://vitaliiradaiev.github.io/IT-Vision/dist/contentPage.html",
+            "linkToGitHub": "https://github.com/VitaliiRadaiev/IT-Vision.git",
+            "linkToLiveSite": "https://it-vision.ch/",
+            "stackList": ["Html", "Css", "JavaScript"]
+        },
+        {   
+            "imageSrc": "assets/images/Nanobot.jpg",
+            "videoSrc": "assets/videos/Nanobot.mp4",
+            "linkToHome": "https://vitaliiradaiev.github.io/Nanobot/dist/",
+            "linkToAllPages": "https://vitaliiradaiev.github.io/Nanobot/dist/contentPage.html",
+            "linkToGitHub": "https://github.com/VitaliiRadaiev/Nanobot.git",
+            "linkToLiveSite": "https://nanobotmedical.com/",
+            "stackList": ["Html", "Css", "JavaScript"]
+        },
+        {   
+            "imageSrc": "assets/images/BMW.jpg",
+            "videoSrc": "assets/videos/BMW.mp4",
+            "linkToHome": "https://vitaliiradaiev.github.io/BMW/dist/",
+            "linkToAllPages": "https://vitaliiradaiev.github.io/BMW/dist/contentPage.html",
+            "linkToGitHub": "https://github.com/VitaliiRadaiev/BMW.git",
+            "linkToLiveSite": "https://bmwyou.ru/",
+            "stackList": ["Html", "Css", "JavaScript"]
+        },
+        {   
+            "imageSrc": "assets/images/BUN.jpg",
+            "videoSrc": "assets/videos/BUN.mp4",
+            "linkToHome": "https://vitaliiradaiev.github.io/Bun/dist/",
+            "linkToAllPages": "https://vitaliiradaiev.github.io/Bun/dist/contentPage.html",
+            "linkToGitHub": "https://github.com/VitaliiRadaiev/Bun.git",
+            "linkToLiveSite": "https://www.bun.nl/",
+            "stackList": ["Html", "Css", "JavaScript"]
+        },
+        {   
+            "imageSrc": "assets/images/Vatkin.jpg",
+            "videoSrc": "assets/videos/Vatkin.mp4",
+            "linkToHome": "https://vitaliiradaiev.github.io/VATKIN/dist/index.html",
+            "linkToAllPages": "https://vitaliiradaiev.github.io/VATKIN/dist/contentPage.html",
+            "linkToGitHub": "https://github.com/VitaliiRadaiev/VATKIN.git",
+            "linkToLiveSite": "https://vatkin.art/",
+            "stackList": ["Html", "Css", "JavaScript"]
+        }
+    ]
+}

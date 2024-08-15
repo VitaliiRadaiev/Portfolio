@@ -1,0 +1,139 @@
+.portfolio {
+
+    &__list {
+        margin-bottom: 0;
+        margin-top: 4.2rem;
+        display: grid;
+        gap: 4.6rem;
+
+        @media (min-width: $mq-md) {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+}
+
+.portfolio-card {
+
+    &__body {
+        display: block;
+        position: relative;
+        height: 0;
+        padding-bottom: 56.25%;
+        box-shadow: 0px 0px 30px rgba(#fff, 0.1);
+
+        @media #{$mouse-device} {
+            &:hover {
+                & .portfolio-card__poster {
+                    transition: opacity .15s ease .5s;
+                    opacity: 0 !important;
+
+                    & img {
+                        transform: scale(1.01);
+                    }
+                }
+            }
+        }
+    }
+
+    &__poster {
+        position: absolute;
+        inset: 0;
+        z-index: 3;
+        transition: opacity .15s ease;
+        opacity: 0;
+        overflow: hidden;
+        transform: translateZ(0);
+
+        & img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            transition: transform .4s ease;
+        }
+    }
+
+    &__loader {
+        position: absolute;
+        inset: 0;
+        z-index: 2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &:not(.active) {
+            display: none;
+        }
+    }
+
+    &__video {
+        position: absolute;
+        inset: 0;
+        z-index: 1;
+        background-color: rgba(#fff, 0.2);
+
+        & video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        & div[id^="vjs_"] {
+            height: 100%;
+            width: 100%;
+
+            & > *:not(video):not(.cover-loader) {
+                display: none;
+            }
+        }
+    }
+
+    &__footer {
+        margin-top: 1rem;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.6rem;
+    }
+
+    &__stack-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: .0rem .8rem;
+        margin-right: auto;
+        flex: 0 1 100%;
+
+        @media (min-width: $mq-md) {
+            flex: 0 1 auto;
+        }
+
+        & > span:first-child {
+            color: $secondColor;
+        }
+    }
+
+    &__link-to-all {
+        text-decoration: underline;
+        transition: color .15s ease;
+        flex: 0 0 auto;
+
+        @media #{$mouse-device} {
+            &:hover {
+                color: $secondColor;
+            }
+        }
+    }
+}
+
+[data-load-more-trigger] {
+    margin-top: 2rem;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+
+    &:not(.active) {
+        & .lds-roller {
+            display: none;
+        }
+    }
+}

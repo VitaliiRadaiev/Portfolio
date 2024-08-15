@@ -1,0 +1,87 @@
+.header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 20;
+    border-bottom: 1px solid #959595;
+    background-color: $firstColor;
+
+
+    &__body {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 2.4rem;
+        padding: 1.2rem 0;
+    }
+
+    &__language {
+        position: relative;
+        cursor: pointer;
+
+        &:hover {
+            & .header__language-list {
+                opacity: 1;
+                transform: translateY(0);
+                visibility: visible;
+            }
+        }
+    }
+
+    &__language-current {
+        display: flex;
+        align-items: center;
+
+        & svg {
+            flex: 0 0 auto;
+            height: 0.8em;
+            width: auto;
+        }
+    }
+
+    &__language-list {
+        margin-bottom: 0;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        opacity: 0;
+        transform: translateY(-2rem);
+        visibility: hidden;
+        transition: opacity .15s ease, transform .15s ease, visibility .15s ease;
+
+        & a {
+            transition: color .15s ease;
+            @media #{$mouse-device} {
+                &:hover {
+                    color: $secondColor;
+                }
+            }
+        }
+    }
+
+    &__title {
+        font-size: 2rem;
+    }
+
+    &__social {
+        margin-bottom: 0;
+        display: flex;
+        gap: 1.6rem;
+
+        & svg {
+            height: 2.6rem;
+            width: auto;
+            display: block;
+        }
+
+        & a {
+            transition: color 0.15s ease;
+            @media #{$mouse-device} {
+                &:hover {
+                    color: $secondColor;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,6 @@
+[data-spoiler-trigger] {
+
+    & + * {
+        display: none;
+    }
+}

@@ -50,6 +50,7 @@
             height: calc(100% + 1rem);
             left: -1px;
             width: 45%;
+            z-index: 2;
             /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#181818+0,181818+100&1+0,0+100 */
             background: linear-gradient(
                 to right,
@@ -65,6 +66,7 @@
             height: calc(100% + 1rem);
             right: -1px;
             width: 45%;
+            z-index: 2;
             /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#181818+0,181818+100&0+0,1+100 */
             background: linear-gradient(
                 to right,
@@ -80,6 +82,7 @@
             width: calc(100% + 1rem);
             bottom: -1px;
             height: 30%;
+            z-index: 2;
             /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#181818+0,181818+100&0+0,1+100 */
             background: linear-gradient(
                 to bottom,
@@ -87,11 +90,22 @@
                 rgba(24, 24, 24, 1) 100%
             ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
         }
+    }
+
+    &__image-inner {
+        position: relative;
+        height: 0;
+        padding-bottom: 150%;
+        z-index: 1;
 
         & img {
+            position: absolute;
+            top: 0;
+            left: 0;
             width: 100%;
-            height: auto;
+            height: 100%;
             display: block;
+            object-fit: cover;
         }
     }
 }

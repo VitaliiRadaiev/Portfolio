@@ -277,6 +277,49 @@
             "stackList": ["Html", "Css", "JavaScript"]
         },
         {   
+            "imageSrc": "assets/images/Credit-Hub.jpg",
+            "videoSrc": "assets/videos/credit-hub_854x480.mp4",
+            "linkToHome": "https://vitaliiradaiev.github.io/CreditHub/dist/",
+            "linkToAllPages": "https://vitaliiradaiev.github.io/CreditHub/dist/contentPage.html",
+            "linkToGitHub": "https://github.com/VitaliiRadaiev/CreditHub.git",
+            "linkToLiveSite": "https://www.credithub.com.au/",
+            "stackList": ["Html", "Css", "JavaScript"]
+        },
+        {   
+            "imageSrc": "assets/images/vibes.jpg",
+            "videoSrc": "assets/videos/vibes_854x480.mp4",
+            "linkToHome": "https://vitaliiradaiev.github.io/Vibes/dist/index.html",
+            "linkToGitHub": "https://github.com/VitaliiRadaiev/Vibes.git",
+            "linkToLiveSite": "https://www.vibes-automobile.ch/en/",
+            "stackList": ["Html", "Css", "JavaScript"]
+        },
+        {   
+            "imageSrc": "assets/images/CPS.jpg",
+            "videoSrc": "assets/videos/CPS_854x480.mp4",
+            "linkToHome": "https://vitaliiradaiev.github.io/animatedCPS/dist/",
+            "linkToAllPages": "https://vitaliiradaiev.github.io/animatedCPS/dist/contentPage.html",
+            "linkToGitHub": "https://github.com/VitaliiRadaiev/animatedCPS.git",
+            "linkToLiveSite": "https://capsychservices.com/",
+            "stackList": ["Html", "Css", "JavaScript"]
+        },
+        {   
+            "imageSrc": "assets/images/union.jpg",
+            "videoSrc": "assets/videos/union_854x480.mp4",
+            "linkToHome": "https://vitaliiradaiev.github.io/Union/dist/",
+            "linkToAllPages": "https://vitaliiradaiev.github.io/Union/dist/contentPage.html",
+            "linkToGitHub": "https://github.com/VitaliiRadaiev/Union.git",
+            "stackList": ["Html", "Css", "JavaScript"]
+        },
+        {   
+            "imageSrc": "assets/images/medjlist.jpg",
+            "videoSrc": "assets/videos/medjlist_854x480.mp4",
+            "linkToHome": "https://vitaliiradaiev.github.io/Majlis/dist/",
+            "linkToAllPages": "https://vitaliiradaiev.github.io/Majlis/dist/contentPage.html",
+            "linkToGitHub": "https://github.com/VitaliiRadaiev/Majlis.git",
+            "linkToLiveSite": "https://qtmm.org/",
+            "stackList": ["Html", "Css", "JavaScript"]
+        },
+        {   
             "imageSrc": "assets/images/.jpg",
             "videoSrc": "assets/videos/_854x480.mp4",
             "linkToHome": "",

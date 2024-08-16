@@ -130,6 +130,160 @@
             "linkToGitHub": "https://github.com/VitaliiRadaiev/Rinos.git",
             "linkToLiveSite": "https://rinos.com/",
             "stackList": ["Html", "Css", "JavaScript"]
+        },
+        {   
+            "imageSrc": "assets/images/auto4export.jpg",
+            "videoSrc": "assets/videos/autoExport_854x480.mp4",
+            "linkToHome": "https://vitaliiradaiev.github.io/auto4export/dist/",
+            "linkToAllPages": "https://vitaliiradaiev.github.io/auto4export/dist/contentPage.html",
+            "linkToGitHub": "https://github.com/VitaliiRadaiev/auto4export.git",
+            "linkToLiveSite": "https://www.bidndrive.com/",
+            "stackList": ["Html", "Css", "JavaScript"]
+        },
+        {   
+            "imageSrc": "assets/images/AHS.jpg",
+            "videoSrc": "assets/videos/AHS_854x480.mp4",
+            "linkToHome": "https://vitaliiradaiev.github.io/AHS/dist/",
+            "linkToAllPages": "https://vitaliiradaiev.github.io/AHS/dist/contentPage.html",
+            "linkToGitHub": "https://github.com/VitaliiRadaiev/AHS.git",
+            "stackList": ["Html", "Css", "JavaScript"]
+        },
+        {   
+            "imageSrc": "assets/images/Elmbridge.jpg",
+            "videoSrc": "assets/videos/Elmbridge_854x480.mp4",
+            "linkToHome": "https://vitaliiradaiev.github.io/Elmbridge/dist/",
+            "linkToAllPages": "https://vitaliiradaiev.github.io/Elmbridge/dist/contentPage.html",
+            "linkToGitHub": "https://github.com/VitaliiRadaiev/Elmbridge.git",
+            "linkToLiveSite": "https://elmbridgemencap.org.uk/",
+            "stackList": ["Html", "Css", "JavaScript"]
+        },
+        {   
+            "imageSrc": "assets/images/Laser-Store.jpg",
+            "videoSrc": "assets/videos/Laser-Store_854x480.mp4",
+            "linkToHome": "https://vitaliiradaiev.github.io/LasetStore/dist/products.html",
+            "linkToAllPages": "https://vitaliiradaiev.github.io/LasetStore/dist/contentPage.html",
+            "linkToGitHub": "https://github.com/VitaliiRadaiev/LasetStore.git",
+            "linkToLiveSite": "https://laserstore.ru/",
+            "stackList": ["Html", "Css", "JavaScript"]
+        },
+        {   
+            "imageSrc": "assets/images/Grooming.jpg",
+            "videoSrc": "assets/videos/Grooming_854x480.mp4",
+            "linkToHome": "https://vitaliiradaiev.github.io/GroomingSchool/dist/",
+            "linkToAllPages": "https://vitaliiradaiev.github.io/GroomingSchool/dist/contentPage.html",
+            "linkToGitHub": "https://github.com/VitaliiRadaiev/GroomingSchool.git",
+            "stackList": ["Html", "Css", "JavaScript"]
+        },
+        {   
+            "imageSrc": "assets/images/driving-school.jpg",
+            "videoSrc": "assets/videos/driving-school_854x480.mp4",
+            "linkToHome": "https://vitaliiradaiev.github.io/GDS/dist/",
+            "linkToAllPages": "https://vitaliiradaiev.github.io/GDS/dist/contentPage.html",
+            "linkToGitHub": "https://github.com/VitaliiRadaiev/GDS.git",
+            "linkToLiveSite": "https://gennadys-driving-school.au/",
+            "stackList": ["Html", "Css", "JavaScript"]
+        },
+        {   
+            "imageSrc": "assets/images/kidsmont.jpg",
+            "videoSrc": "assets/videos/kidsmont_854x480.mp4",
+            "linkToHome": "https://vitaliiradaiev.github.io/Kidsmont/dist/",
+            "linkToAllPages": "https://vitaliiradaiev.github.io/Kidsmont/dist/contentPage.html",
+            "linkToGitHub": "https://github.com/VitaliiRadaiev/Kidsmont.git",
+            "stackList": ["Html", "Css", "JavaScript"]
+        },
+        {   
+            "imageSrc": "assets/images/dana.jpg",
+            "videoSrc": "assets/videos/dana_854x480.mp4",
+            "linkToHome": "https://vitaliiradaiev.github.io/DANA/dist/",
+            "linkToAllPages": "https://vitaliiradaiev.github.io/DANA/dist/contentPage.html",
+            "linkToGitHub": "https://github.com/VitaliiRadaiev/DANA.git",
+            "linkToLiveSite": "https://dana.spb.ru/",
+            "stackList": ["Html", "Css", "JavaScript"]
+        },
+        {   
+            "imageSrc": "assets/images/noir.jpg",
+            "videoSrc": "assets/videos/noir_854x480.mp4",
+            "linkToHome": "https://vitaliiradaiev.github.io/Noir/dist/",
+            "linkToAllPages": "https://vitaliiradaiev.github.io/Noir/dist/contentPage.html",
+            "linkToGitHub": "https://github.com/VitaliiRadaiev/Noir.git",
+            "stackList": ["Html", "Css", "JavaScript"]
+        },
+        {   
+            "imageSrc": "assets/images/angle-girl.jpg",
+            "videoSrc": "assets/videos/angle-girl_854x480.mp4",
+            "linkToHome": "https://vitaliiradaiev.github.io/AngelGirl/dist/index.html",
+            "linkToGitHub": "https://github.com/VitaliiRadaiev/AngelGirl.git",
+            "stackList": ["Html", "Css", "JavaScript"]
+        },
+        {   
+            "imageSrc": "assets/images/Bexa.jpg",
+            "videoSrc": "assets/videos/Bexa_854x480.mp4",
+            "linkToHome": "https://vitaliiradaiev.github.io/BEXA/dist/",
+            "linkToAllPages": "https://vitaliiradaiev.github.io/BEXA/dist/contentPage.html",
+            "linkToGitHub": "https://github.com/VitaliiRadaiev/BEXA.git",
+            "linkToLiveSite": "https://veha.ua/",
+            "stackList": ["Html", "Css", "JavaScript"]
+        },
+        {   
+            "imageSrc": "assets/images/john-dunham.jpg",
+            "videoSrc": "assets/videos/john-dunham_854x480.mp4",
+            "linkToHome": "https://vitaliiradaiev.github.io/JDA/dist/",
+            "linkToAllPages": "https://vitaliiradaiev.github.io/JDA/dist/contentPage.html",
+            "linkToGitHub": "https://github.com/VitaliiRadaiev/JDA.git",
+            "linkToLiveSite": "https://guerrillaeconomics.com/",
+            "stackList": ["Html", "Css", "JavaScript"]
+        },
+        {   
+            "imageSrc": "assets/images/perfect.jpg",
+            "videoSrc": "assets/videos/perfect_854x480.mp4",
+            "linkToHome": "https://vitaliiradaiev.github.io/Perfect/dist/",
+            "linkToAllPages": "https://vitaliiradaiev.github.io/Perfect/dist/contentPage.html",
+            "linkToGitHub": "https://github.com/VitaliiRadaiev/Perfect.git",
+            "linkToLiveSite": "https://idealmaster.ru/",
+            "stackList": ["Html", "Css", "JavaScript"]
+        },
+        {   
+            "imageSrc": "assets/images/r-services.jpg",
+            "videoSrc": "assets/videos/r-services_854x480.mp4",
+            "linkToHome": "https://vitaliiradaiev.github.io/RyachMenegment/dist/",
+            "linkToAllPages": "https://vitaliiradaiev.github.io/RyachMenegment/dist/contentPage.html",
+            "linkToGitHub": "https://github.com/VitaliiRadaiev/RyachMenegment.git",
+            "linkToLiveSite": "https://ryachtmanagement.com/",
+            "stackList": ["Html", "Css", "JavaScript"]
+        },
+        {   
+            "imageSrc": "assets/images/sab.jpg",
+            "videoSrc": "assets/videos/sab_854x480.mp4",
+            "linkToHome": "https://vitaliiradaiev.github.io/SAB/dist/",
+            "linkToAllPages": "https://vitaliiradaiev.github.io/SAB/dist/contentPage.html",
+            "linkToGitHub": "https://github.com/VitaliiRadaiev/SAB.git",
+            "linkToLiveSite": "https://www.sabcap.com/",
+            "stackList": ["Html", "Css", "JavaScript"]
+        },
+        {   
+            "imageSrc": "assets/images/jim-adler.jpg",
+            "videoSrc": "assets/videos/jim-adler_854x480.mp4",
+            "linkToHome": "https://vitaliiradaiev.github.io/JimAdler/dist/",
+            "linkToAllPages": "https://vitaliiradaiev.github.io/JimAdler/dist/contentPage.html",
+            "linkToGitHub": "https://github.com/VitaliiRadaiev/JimAdler.git",
+            "linkToLiveSite": "https://www.elmartillotejano.com/",
+            "stackList": ["Html", "Css", "JavaScript"]
+        },
+        {   
+            "imageSrc": "assets/images/hostes.jpg",
+            "videoSrc": "assets/videos/hostes_854x480.mp4",
+            "linkToHome": "https://vitaliiradaiev.github.io/HoneyBunny/dist/index.html",
+            "linkToGitHub": "https://github.com/VitaliiRadaiev/HoneyBunny.git",
+            "stackList": ["Html", "Css", "JavaScript"]
+        },
+        {   
+            "imageSrc": "assets/images/.jpg",
+            "videoSrc": "assets/videos/_854x480.mp4",
+            "linkToHome": "",
+            "linkToAllPages": "",
+            "linkToGitHub": "",
+            "linkToLiveSite": "",
+            "stackList": ["Html", "Css", "JavaScript"]
         }
     ]
 }

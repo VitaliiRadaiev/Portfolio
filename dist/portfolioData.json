@@ -320,6 +320,115 @@
             "stackList": ["Html", "Css", "JavaScript"]
         },
         {   
+            "imageSrc": "assets/images/dekunstgras.jpg",
+            "videoSrc": "assets/videos/dekunstgras_854x480.mp4",
+            "linkToHome": "https://vitaliiradaiev.github.io/Kunstgras/dist/",
+            "linkToAllPages": "https://vitaliiradaiev.github.io/Kunstgras/dist/contentPage.html",
+            "linkToGitHub": "https://github.com/VitaliiRadaiev/Kunstgras.git",
+            "stackList": ["Html", "Css", "JavaScript"] 
+        },
+        {   
+            "imageSrc": "assets/images/busines-butlers.jpg",
+            "videoSrc": "assets/videos/busines-butlers_854x480.mp4",
+            "linkToHome": "https://vitaliiradaiev.github.io/BusinessButlers/dist/",
+            "linkToAllPages": "https://vitaliiradaiev.github.io/BusinessButlers/dist/contentPage.html",
+            "linkToGitHub": "https://github.com/VitaliiRadaiev/BusinessButlers.git",
+            "linkToLiveSite": "https://businessbutlers.com.au/",
+            "stackList": ["Html", "Css", "JavaScript"] 
+        },
+        {   
+            "imageSrc": "assets/images/JH-tester.jpg",
+            "videoSrc": "assets/videos/JH-tester_854x480.mp4",
+            "linkToHome": "https://vitaliiradaiev.github.io/JHT/dist/",
+            "linkToAllPages": "https://vitaliiradaiev.github.io/JHT/dist/contentPage.html",
+            "linkToGitHub": "https://github.com/VitaliiRadaiev/JHT.git",
+            "linkToLiveSite": "https://jhtester.com/",
+            "stackList": ["Html", "Css", "JavaScript"] 
+        },
+        {   
+            "imageSrc": "assets/images/reosvita.jpg",
+            "videoSrc": "assets/videos/reosvita_854x480.mp4",
+            "linkToHome": "https://vitaliiradaiev.github.io/reOsvita/dist/",
+            "linkToAllPages": "https://vitaliiradaiev.github.io/reOsvita/dist/contentPage.html",
+            "linkToGitHub": "https://github.com/VitaliiRadaiev/reOsvita.git",
+            "linkToLiveSite": "https://reosvita.org/",
+            "stackList": ["Html", "Css", "JavaScript"]
+        },
+        {   
+            "imageSrc": "assets/images/feetjie.jpg",
+            "videoSrc": "assets/videos/feetjie_854x480.mp4",
+            "linkToHome": "https://vitaliiradaiev.github.io/feetje/dist/",
+            "linkToAllPages": "https://vitaliiradaiev.github.io/feetje/dist/contentPage.html",
+            "linkToGitHub": "https://github.com/VitaliiRadaiev/feetje.git",
+            "stackList": ["Html", "Css", "JavaScript"] 
+        },
+        {   
+            "imageSrc": "assets/images/mortgage.jpg",
+            "videoSrc": "assets/videos/mortgage_854x480.mp4",
+            "linkToHome": "https://vitaliiradaiev.github.io/Mortgage/dist/",
+            "linkToAllPages": "https://vitaliiradaiev.github.io/Mortgage/dist/contentPage.html",
+            "linkToGitHub": "https://github.com/VitaliiRadaiev/Mortgage.git",
+            "stackList": ["Html", "Css", "JavaScript"]
+        },
+        {   
+            "imageSrc": "assets/images/blue-world.jpg",
+            "videoSrc": "assets/videos/blue-world_854x480.mp4",
+            "linkToHome": "https://vitaliiradaiev.github.io/BlueWorld/dist/",
+            "linkToAllPages": "https://vitaliiradaiev.github.io/BlueWorld/dist/index.html",
+            "linkToGitHub": "https://github.com/VitaliiRadaiev/BlueWorld.git",
+            "linkToLiveSite": "https://www.blueworldseafood.com/",
+            "stackList": ["Html", "Css", "JavaScript"] 
+        },
+        {   
+            "imageSrc": "assets/images/zodiacs.jpg",
+            "videoSrc": "assets/videos/zodiacs_854x480.mp4",
+            "linkToHome": "https://vitaliiradaiev.github.io/zodiac/dist/comparison.html",
+            "linkToAllPages": "https://vitaliiradaiev.github.io/zodiac/dist/contentPage.html",
+            "linkToGitHub": "https://github.com/VitaliiRadaiev/zodiac.git",
+            "stackList": ["Html", "Css", "JavaScript"]
+        },
+        {   
+            "imageSrc": "assets/images/queen.jpg",
+            "videoSrc": "assets/videos/queen_854x480.mp4",
+            "linkToHome": "https://vitaliiradaiev.github.io/Queen/work/",
+            "linkToAllPages": "https://vitaliiradaiev.github.io/Queen/work/contentPage.html",
+            "linkToGitHub": "https://github.com/VitaliiRadaiev/Queen.git",
+            "stackList": ["Html", "Css", "JavaScript"]
+        },
+        {   
+            "imageSrc": "assets/images/storm.jpg",
+            "videoSrc": "assets/videos/storm_854x480.mp4",
+            "linkToHome": "https://vitaliiradaiev.github.io/Storm/dist/",
+            "linkToAllPages": "https://vitaliiradaiev.github.io/Storm/dist/contentPage.html",
+            "linkToGitHub": "https://github.com/VitaliiRadaiev/Storm.git",
+            "stackList": ["Html", "Css", "JavaScript"]
+        },
+        {   
+            "imageSrc": "assets/images/innova.jpg",
+            "videoSrc": "assets/videos/innova_854x480.mp4",
+            "linkToHome": "https://vitaliiradaiev.github.io/innova/dist/",
+            "linkToAllPages": "https://vitaliiradaiev.github.io/innova/dist/contentPage.html",
+            "linkToGitHub": "https://github.com/VitaliiRadaiev/innova.git",
+            "stackList": ["Html", "Css", "JavaScript"]
+        },
+        {   
+            "imageSrc": "assets/images/covidtest.jpg",
+            "videoSrc": "assets/videos/covidtest_854x480.mp4",
+            "linkToHome": "https://vitaliiradaiev.github.io/CovidSt/dist/",
+            "linkToAllPages": "https://vitaliiradaiev.github.io/CovidSt/dist/contentPage.html",
+            "linkToGitHub": "https://github.com/VitaliiRadaiev/CovidSt",
+            "stackList": ["Html", "Css", "JavaScript"]
+        },
+        {   
+            "imageSrc": "assets/images/auqa-life.jpg",
+            "videoSrc": "assets/videos/auqa-life_854x480.mp4",
+            "linkToHome": "https://vitaliiradaiev.github.io/AquaLife/dist/",
+            "linkToAllPages": "https://vitaliiradaiev.github.io/AquaLife/dist/contentPage.html",
+            "linkToGitHub": "https://github.com/VitaliiRadaiev/AquaLife",
+            "linkToLiveSite": "https://aqua-life.pl/",
+            "stackList": ["Html", "Css", "JavaScript"]
+        },
+        {   
             "imageSrc": "assets/images/.jpg",
             "videoSrc": "assets/videos/_854x480.mp4",
             "linkToHome": "",

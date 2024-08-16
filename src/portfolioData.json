@@ -36,7 +36,7 @@
         },
         {   
             "imageSrc": "assets/images/IT-Vision.jpg",
-            "videoSrc": "assets/videos/it-vis.mp4",
+            "videoSrc": "assets/videos/it-vision_854x480.mp4",
             "linkToHome": "https://vitaliiradaiev.github.io/IT-Vision/dist/",
             "linkToAllPages": "https://vitaliiradaiev.github.io/IT-Vision/dist/contentPage.html",
             "linkToGitHub": "https://github.com/VitaliiRadaiev/IT-Vision.git",

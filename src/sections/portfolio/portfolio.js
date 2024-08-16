@@ -20,7 +20,7 @@
             $img.src = $imageContainer.getAttribute('data-img-src');
             $imageContainer.append($img);
 
-            if(isMobile()) return;
+            if (isMobile()) return;
 
             let timeId;
             let player = null;
@@ -45,13 +45,16 @@
                         $videoContainer.append($video);
 
                         player = videojs($video);
-                        player.src({ 
-                            type: 'video/mp4', 
-                            src: src 
+                        player.src({
+                            type: 'video/mp4',
+                            src: src
                         });
                         player.ready(() => {
                             player.play()
                             $videoContainer.player = player;
+                        });
+
+                        player.on('playing', function () {
                             $loader.classList.remove('active');
                         });
                     }
@@ -84,7 +87,7 @@
             };
 
             const callback = function (entries, observer) {
-                if(entries[0].isIntersecting) {
+                if (entries[0].isIntersecting) {
                     addCards(data, $portfolioList);
                 }
             };
@@ -95,7 +98,7 @@
 
         function addCards(data, $container) {
             const loadedItemsCount = $container.children.length;
-            if(loadedItemsCount === data.length) return;
+            if (loadedItemsCount === data.length) return;
 
             const loadDataItems = data.slice(loadedItemsCount, loadedItemsCount + 4);
 
@@ -116,30 +119,30 @@
                                 ${data.stackList.map(i => `<span>${i}</span>`).join('')}
                             </div>
 
-                            ${data.linkToAllPages 
-                                ? `
+                            ${data.linkToAllPages
+                        ? `
                                     <a href="${data.linkToAllPages}" target="_blank" class="portfolio-card__link-to-all">
                                         Show all pages
                                     </a>
                                 `
-                                : ""
-                            }
-                            ${data.linkToGitHub 
-                                ? `
+                        : ""
+                    }
+                            ${data.linkToGitHub
+                        ? `
                                     <a href="${data.linkToGitHub}" target="_blank" class="portfolio-card__link-to-all">
                                         GitHub
                                     </a>
                                 `
-                                : ""
-                            }
-                            ${data.linkToLiveSite 
-                                ? `
+                        : ""
+                    }
+                            ${data.linkToLiveSite
+                        ? `
                                     <a href="${data.linkToLiveSite}" target="_blank" class="portfolio-card__link-to-all">
                                         Live site
                                     </a>
                                 `
-                                : ""
-                            }
+                        : ""
+                    }
                         </div>
                     </div>
                 `);

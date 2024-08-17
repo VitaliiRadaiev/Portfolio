@@ -16,6 +16,18 @@
         padding: 1.2rem 0;
     }
 
+    &__logo {
+        margin-right: auto;
+        line-height: 1em;
+        text-transform: uppercase;
+        font-weight: bold;
+        letter-spacing: 0.2em;
+
+        @media (max-width: 475px) {
+            display: none;
+        }
+    }
+
     &__language {
         position: relative;
         cursor: pointer;

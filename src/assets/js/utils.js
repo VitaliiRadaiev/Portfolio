@@ -120,6 +120,16 @@ function throttle(func, limit) {
     };
 }
 
+function buildThresholdList(threshold) { //threshold: number
+    const array = [];
+    for (let i = 1; i <= threshold; i++) {
+        array.push(i / threshold);
+    }
+    return array;
+}
+
+// === create Animator usage ===
+
 function createAnimator({ timing, draw, duration, onEnd }) {
     let start = null;
     let pausedAt = null;
@@ -169,14 +179,6 @@ function createAnimator({ timing, draw, duration, onEnd }) {
     };
 };
 
-function truncateString(el, stringLength = 0) {
-    let str = el.innerText;
-    if (str.length <= stringLength) return;
-    el.innerText = str.slice(0, stringLength) + '...';
-}
-
-// === create Animator usage ===
-
 // const animation = createAnimator({
 //     duration: 1000,
 //     timing(timeFraction) {
@@ -191,3 +193,10 @@ function truncateString(el, stringLength = 0) {
 // });
 
 // =/== create Animator usage ===
+
+
+function truncateString(el, stringLength = 0) {
+    let str = el.innerText;
+    if (str.length <= stringLength) return;
+    el.innerText = str.slice(0, stringLength) + '...';
+}

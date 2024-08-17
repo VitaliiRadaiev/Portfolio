@@ -20,51 +20,106 @@
             $img.src = $imageContainer.getAttribute('data-img-src');
             $imageContainer.append($img);
 
-            if (isMobile()) return;
-
-            let timeId;
+            let timeId = null;
             let player = null;
 
-            $cardBody.addEventListener('mouseenter', () => {
-                timeId = setTimeout(() => {
-                    const src = $videoContainer.getAttribute('data-video-src');
-                    if (!src) return;
+            const initAndStartVideo = () => {
+                const src = $videoContainer.getAttribute('data-video-src');
+                if (!src) return;
 
-                    if (player) {
-                        player.play();
-                    } else {
-                        $loader.classList.add('active');
-                        const $video = document.createElement('video');
-                        $video.setAttribute('loop', '');
-                        $video.setAttribute('muted', 'muted');
-                        $video.setAttribute('playsinline', 'playsinline');
-                        $video.setAttribute('disablepictureinpicture', '');
-                        $video.setAttribute('controlslist', 'nodownload noplaybackrate');
-                        $video.setAttribute('type', 'video/mp4');
+                if (player) {
+                    player.play();
+                } else {
+                    $loader.classList.add('active');
+                    const $video = document.createElement('video');
+                    $video.setAttribute('loop', '');
+                    $video.setAttribute('muted', 'muted');
+                    $video.setAttribute('playsinline', 'playsinline');
+                    $video.setAttribute('disablepictureinpicture', '');
+                    $video.setAttribute('controlslist', 'nodownload noplaybackrate');
+                    $video.setAttribute('type', 'video/mp4');
 
-                        $videoContainer.append($video);
+                    $videoContainer.append($video);
 
-                        player = videojs($video);
-                        player.src({
-                            type: 'video/mp4',
-                            src: src
-                        });
-                        player.ready(() => {
-                            player.play()
-                            $videoContainer.player = player;
-                        });
+                    player = videojs($video);
+                    player.src({
+                        type: 'video/mp4',
+                        src: src
+                    });
+                    player.ready(() => {
+                        player.play()
+                        $videoContainer.player = player;
+                    });
 
-                        player.on('playing', function () {
-                            $loader.classList.remove('active');
-                        });
-                    }
+                    player.on('playing', function () {
+                        $loader.classList.remove('active');
+                    });
+                }
+            }
 
-                }, 500);
-            })
-            $cardBody.addEventListener('mouseleave', () => {
-                clearTimeout(timeId);
-                $videoContainer?.player?.pause();
-            })
+            if (!isMobile()) {
+                $cardBody.addEventListener('mouseenter', () => {
+                    timeId = setTimeout(() => {
+                        initAndStartVideo();
+                    }, 500);
+                })
+                $cardBody.addEventListener('mouseleave', () => {
+                    clearTimeout(timeId);
+                    $videoContainer?.player?.pause();
+                })
+            } else {
+                const options = {
+                    root: null,
+                    rootMargin: "49% 0px -49% 0px",
+                    threshold: buildThresholdList(20),
+                };
+
+                const callback = function (entries, observer) {
+                    entries.forEach((entry) => {
+                        if (entry.isIntersecting) {
+                            const rect = entry.target.getBoundingClientRect();
+                            const screenCenter = window.innerHeight / 2;
+
+                            const distanceTop = screenCenter - rect.top;
+                            const distanceBottom = rect.bottom - screenCenter;
+
+                            const elementHeight = rect.height;
+
+                            let progress;
+
+                            if (distanceTop >= 0 && distanceBottom >= 0) {
+                                progress = (distanceTop / elementHeight) * 100;
+                            } else if (distanceTop < 0) {
+                                progress = 0;
+                            } else {
+                                progress = 100;
+                            }
+
+                            if (progress.toFixed(2) > 20 && progress.toFixed(2) < 80) {
+
+                                if ($videoContainer?.player && !$videoContainer?.player?.paused()) return;
+
+                                if (timeId) return;
+
+                                timeId = setTimeout(() => {
+                                    initAndStartVideo();
+                                    $imageContainer.classList.add('hide');
+                                }, 600);
+
+                            } else {
+                                clearTimeout(timeId);
+                                timeId = null;
+                                $videoContainer?.player?.pause();
+                                $imageContainer.classList.remove('hide');
+                            }
+                        }
+                    });
+                };
+
+                const observer = new IntersectionObserver(callback, options);
+                observer.observe($li)
+
+            }
         }
 
         async function initLoadMore() {

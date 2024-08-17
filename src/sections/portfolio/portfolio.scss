@@ -43,6 +43,10 @@
         opacity: 0;
         overflow: hidden;
         transform: translateZ(0);
+        
+        &.hide {
+            opacity: 0 !important;
+        }
 
         & img {
             width: 100%;

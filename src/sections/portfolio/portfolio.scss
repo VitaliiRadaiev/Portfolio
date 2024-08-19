@@ -5,10 +5,15 @@
         margin-top: 4.2rem;
         display: grid;
         gap: 4.6rem;
+        padding-bottom: 50vh;
 
         @media (min-width: $mq-md) {
             grid-template-columns: 1fr 1fr;
         }
+
+        @media (min-width: $mq-lg) {
+            padding-bottom: 0;
+        } 
     }
 }
 

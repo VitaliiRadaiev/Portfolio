@@ -685,8 +685,43 @@ window.addEventListener("DOMContentLoaded", () => {
     {
     const $portfolioList = document.querySelector('.portfolio__list');
     if ($portfolioList) {
-
         initLoadMore();
+
+        const initAndStartVideo = ($li) => {
+            const src = $li.videoContainer.getAttribute('data-video-src');
+            if (!src) return;
+
+            if ($li.player) {
+                if($li.player.paused()) {
+                    $li.player.play();
+                }
+            } else {
+                $li.loader.classList.add('active');
+                const $video = document.createElement('video');
+                $video.setAttribute('loop', '');
+                $video.setAttribute('muted', 'muted');
+                $video.setAttribute('playsinline', 'playsinline');
+                $video.setAttribute('disablepictureinpicture', '');
+                $video.setAttribute('controlslist', 'nodownload noplaybackrate');
+                $video.setAttribute('type', 'video/mp4');
+
+                $li.videoContainer.append($video);
+
+                let player = videojs($video);
+                player.src({
+                    type: 'video/mp4',
+                    src: src
+                });
+                player.ready(() => {
+                    player.play()
+                    $li.player = player;
+                });
+
+                player.on('playing', function () {
+                    $li.loader.classList.remove('active');
+                });
+            }
+        }
 
         function initCard($li) {
             const $card = $li.querySelector('[data-portfolio-card]');
@@ -694,6 +729,9 @@ window.addEventListener("DOMContentLoaded", () => {
             const $imageContainer = $card.querySelector('.portfolio-card__poster');
             const $videoContainer = $card.querySelector('.portfolio-card__video');
             const $loader = $card.querySelector('.portfolio-card__loader');
+            $li.videoContainer = $videoContainer;
+            $li.loader = $loader;
+            $li.imageContainer = $imageContainer;
 
             const $img = document.createElement('img');
             $img.onload = () => {
@@ -705,104 +743,17 @@ window.addEventListener("DOMContentLoaded", () => {
             $imageContainer.append($img);
 
             let timeId = null;
-            let player = null;
-
-            const initAndStartVideo = () => {
-                const src = $videoContainer.getAttribute('data-video-src');
-                if (!src) return;
-
-                if (player) {
-                    player.play();
-                } else {
-                    $loader.classList.add('active');
-                    const $video = document.createElement('video');
-                    $video.setAttribute('loop', '');
-                    $video.setAttribute('muted', 'muted');
-                    $video.setAttribute('playsinline', 'playsinline');
-                    $video.setAttribute('disablepictureinpicture', '');
-                    $video.setAttribute('controlslist', 'nodownload noplaybackrate');
-                    $video.setAttribute('type', 'video/mp4');
-
-                    $videoContainer.append($video);
-
-                    player = videojs($video);
-                    player.src({
-                        type: 'video/mp4',
-                        src: src
-                    });
-                    player.ready(() => {
-                        player.play()
-                        $videoContainer.player = player;
-                    });
-
-                    player.on('playing', function () {
-                        $loader.classList.remove('active');
-                    });
-                }
-            }
 
             if (!isMobile()) {
                 $cardBody.addEventListener('mouseenter', () => {
                     timeId = setTimeout(() => {
-                        initAndStartVideo();
+                        initAndStartVideo($li);
                     }, 500);
                 })
                 $cardBody.addEventListener('mouseleave', () => {
                     clearTimeout(timeId);
-                    $videoContainer?.player?.pause();
+                    $li?.player?.pause();
                 })
-            } else {
-                const options = {
-                    root: null,
-                    rootMargin: "49% 0px -49% 0px",
-                    threshold: buildThresholdList(20),
-                };
-
-                const callback = function (entries, observer) {
-                    entries.forEach((entry) => {
-                        if (entry.isIntersecting) {
-                            const rect = entry.target.getBoundingClientRect();
-                            const screenCenter = window.innerHeight / 2;
-
-                            const distanceTop = screenCenter - rect.top;
-                            const distanceBottom = rect.bottom - screenCenter;
-
-                            const elementHeight = rect.height;
-
-                            let progress;
-
-                            if (distanceTop >= 0 && distanceBottom >= 0) {
-                                progress = (distanceTop / elementHeight) * 100;
-                            } else if (distanceTop < 0) {
-                                progress = 0;
-                            } else {
-                                progress = 100;
-                            }
-
-                            if (progress.toFixed(2) > 20 && progress.toFixed(2) < 80) {
-
-                                if ($videoContainer?.player && !$videoContainer?.player?.paused()) return;
-
-                                if (timeId) return;
-
-                                timeId = setTimeout(() => {
-                                    initAndStartVideo();
-                                    $imageContainer.classList.add('hide');
-                                }, 600);
-
-                            } else {
-                                clearTimeout(timeId);
-                                timeId = null;
-                                $videoContainer?.player?.pause();
-                                $imageContainer.classList.remove('hide');
-                            }
-                        }
-                    });
-                };
-
-                const observer = new IntersectionObserver(callback, options);
-                observer.observe($li)
-
             }
         }
 
@@ -888,6 +839,62 @@ window.addEventListener("DOMContentLoaded", () => {
                 $container.append($li);
                 initCard($li);
             })
+        }
+
+        const calculateCenterZone = () => {
+            const centerScreen = window.innerHeight / 2;
+            const upperBound = centerScreen - (window.innerHeight * 0.25);
+            const lowerBound = centerScreen + (window.innerHeight * 0.25);
+            return { upperBound, lowerBound };
+        };
+
+        function checkVideoVisibility() {
+            const { upperBound, lowerBound } = calculateCenterZone();
+            let $closestVideoContainer = null;
+            let closestDistance = Infinity;
+
+            for (let index = 0; index < $portfolioList.children.length; index++) {
+                const $videoContainer = $portfolioList.children[index];
+                
+                const rect = $videoContainer.getBoundingClientRect();
+                const videoCenter = rect.top + rect.height / 2;
+
+                if (videoCenter >= upperBound && videoCenter <= lowerBound) {
+                    const distanceToCenter = Math.abs(videoCenter - (window.innerHeight / 2));
+
+                    if (distanceToCenter < closestDistance) {
+                        closestDistance = distanceToCenter;
+                        $closestVideoContainer = $videoContainer;
+                    }
+                }
+            }
+
+
+            for (let index = 0; index < $portfolioList.children.length; index++) {
+                const $videoContainer = $portfolioList.children[index];
+                
+                if ($videoContainer === $closestVideoContainer) {
+                    if(!$videoContainer.timeId) {
+                        $videoContainer.timeId = setTimeout(() => {
+                            initAndStartVideo($videoContainer);
+                            $videoContainer?.imageContainer?.classList.add('hide');
+                        }, 800);
+                    }
+                } else {
+                    clearTimeout($videoContainer.timeId);
+                    $videoContainer.timeId = null;
+                    $videoContainer?.player?.pause();
+                    $videoContainer?.imageContainer?.classList.remove('hide');
+                }
+            }            
+        }
+
+        const scrollHandler = throttle(() => {
+            checkVideoVisibility();
+        }, 200);
+
+        if (isMobile()) {
+            window.addEventListener('scroll', scrollHandler);
         }
     }
 }

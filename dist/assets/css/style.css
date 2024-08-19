@@ -2028,6 +2028,7 @@ ol {
   margin-top: 4.2rem;
   display: grid;
   gap: 4.6rem;
+  padding-bottom: 50vh;
 }
 
 .portfolio-card__body {
@@ -2190,6 +2191,9 @@ ol {
   .intro__image {
     width: 35%;
     margin-right: 0;
+  }
+  .portfolio__list {
+    padding-bottom: 0;
   }
 }
 

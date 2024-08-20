@@ -429,6 +429,99 @@
             "stackList": ["Html", "Css", "JavaScript"]
         },
         {   
+            "imageSrc": "assets/images/Novobavar.jpg",
+            "videoSrc": "assets/videos/Novobavar_854x480.mp4",
+            "linkToHome": "https://vitaliiradaiev.github.io/Novobavar/dist/",
+            "linkToAllPages": "https://vitaliiradaiev.github.io/Novobavar/dist/contentPage.html",
+            "linkToGitHub": "https://github.com/VitaliiRadaiev/Novobavar",
+            "linkToLiveSite": "https://novobavarska.com.ua/",
+            "stackList": ["Html", "Css", "JavaScript"]
+        },
+        {   
+            "imageSrc": "assets/images/Exon.jpg",
+            "videoSrc": "assets/videos/Exon_854x480.mp4",
+            "linkToHome": "https://vitaliiradaiev.github.io/Exon/dist/",
+            "linkToAllPages": "https://vitaliiradaiev.github.io/Exon/dist/contentPage.html",
+            "linkToGitHub": "https://github.com/VitaliiRadaiev/Exon",
+            "linkToLiveSite": "https://exonproject.ru/",
+            "stackList": ["Html", "Css", "JavaScript"]
+        },
+        {   
+            "imageSrc": "assets/images/Rozmarini.jpg",
+            "videoSrc": "assets/videos/Rozmarini_854x480.mp4",
+            "linkToHome": "https://vitaliiradaiev.github.io/rozmarin/work/",
+            "linkToAllPages": "https://vitaliiradaiev.github.io/rozmarin/work/contentPage.html",
+            "linkToGitHub": "https://github.com/VitaliiRadaiev/rozmarin",
+            "stackList": ["Html", "Css", "JavaScript"]
+        },
+        {   
+            "imageSrc": "assets/images/BeFree.jpg",
+            "videoSrc": "assets/videos/BeFree_854x480.mp4",
+            "linkToHome": "https://vitaliiradaiev.github.io/BeFree/dist/",
+            "linkToAllPages": "https://vitaliiradaiev.github.io/BeFree/dist/contentPage.html",
+            "linkToGitHub": "https://github.com/VitaliiRadaiev/BeFree",
+            "stackList": ["Html", "Css", "JavaScript"]
+        },
+        {   
+            "imageSrc": "assets/images/reaspira.jpg",
+            "videoSrc": "assets/videos/reaspira_854x480.mp4",
+            "linkToHome": "https://vitaliiradaiev.github.io/Reaspire-Page/",
+            "linkToAllPages": "https://vitaliiradaiev.github.io/Reaspire-Page/contentPage.html",
+            "linkToGitHub": "https://github.com/VitaliiRadaiev/Reaspire-Page",
+            "stackList": ["Html", "Css", "JavaScript"]
+        },
+        {   
+            "imageSrc": "assets/images/RialTo.jpg",
+            "videoSrc": "assets/videos/RialTo_854x480.mp4",
+            "linkToHome": "https://vitaliiradaiev.github.io/RialTo/dist/",
+            "linkToAllPages": "https://vitaliiradaiev.github.io/RialTo/dist/contentPage.html",
+            "linkToGitHub": "https://github.com/VitaliiRadaiev/RialTo",
+            "stackList": ["Html", "Css", "JavaScript"]
+        },
+        {   
+            "imageSrc": "assets/images/StormRating.jpg",
+            "videoSrc": "assets/videos/StormRating_854x480.mp4",
+            "linkToHome": "https://vitaliiradaiev.github.io/StomRatingPage/",
+            "linkToAllPages": "https://vitaliiradaiev.github.io/StomRatingPage/contentPage.html",
+            "linkToGitHub": "https://github.com/VitaliiRadaiev/StomRatingPage",
+            "stackList": ["Html", "Css", "JavaScript"]
+        },
+        {   
+            "imageSrc": "assets/images/copres.jpg",
+            "videoSrc": "assets/videos/copres_854x480.mp4",
+            "linkToHome": "https://vitaliiradaiev.github.io/Copres/dist/",
+            "linkToAllPages": "https://vitaliiradaiev.github.io/Copres/dist/contentPage.html",
+            "linkToGitHub": "https://github.com/VitaliiRadaiev/Copres",
+            "linkToLiveSite": "https://copres.eu/",
+            "stackList": ["Html", "Css", "JavaScript"]
+        },
+        {   
+            "imageSrc": "assets/images/fiennes-classic.jpg",
+            "videoSrc": "assets/videos/fiennes-classic_854x480.mp4",
+            "linkToHome": "https://vitaliiradaiev.github.io/Fiennes-Classcs-Page/",
+            "linkToAllPages": "https://vitaliiradaiev.github.io/Fiennes-Classcs-Page/contentPage.html",
+            "linkToGitHub": "https://github.com/VitaliiRadaiev/Fiennes-Classcs-Page",
+            "linkToLiveSite": "https://fiennesgroup.laracle.com/classics/",
+            "stackList": ["Html", "Css", "JavaScript"] 
+        },
+        {   
+            "imageSrc": "assets/images/pat.jpg",
+            "videoSrc": "assets/videos/pat_854x480.mp4",
+            "linkToHome": "https://vitaliiradaiev.github.io/Pat/dist/",
+            "linkToAllPages": "https://vitaliiradaiev.github.io/Pat/dist/contentPage.html",
+            "linkToGitHub": "https://github.com/VitaliiRadaiev/Pat",
+            "stackList": ["Html", "Css", "JavaScript"] 
+        },
+        {   
+            "imageSrc": "assets/images/clean-slate.jpg",
+            "videoSrc": "assets/videos/clean-slate_854x480.mp4",
+            "linkToHome": "https://vitaliiradaiev.github.io/CleanSlate/dist/",
+            "linkToAllPages": "https://vitaliiradaiev.github.io/CleanSlate/dist/contentPage.html",
+            "linkToGitHub": "https://github.com/VitaliiRadaiev/CleanSlate",
+            "linkToLiveSite": "https://cleanslateproductions.co.uk/",
+            "stackList": ["Html", "Css", "JavaScript"]
+        },
+        {   
             "imageSrc": "assets/images/.jpg",
             "videoSrc": "assets/videos/_854x480.mp4",
             "linkToHome": "",

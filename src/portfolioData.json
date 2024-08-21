@@ -522,6 +522,104 @@
             "stackList": ["Html", "Css", "JavaScript"]
         },
         {   
+            "imageSrc": "assets/images/DLVRD.jpg",
+            "videoSrc": "assets/videos/DLVRD_854x480.mp4",
+            "linkToHome": "https://vitaliiradaiev.github.io/DLVRD/dist/",
+            "linkToAllPages": "https://vitaliiradaiev.github.io/DLVRD/dist/contentPage.html",
+            "linkToGitHub": "https://github.com/VitaliiRadaiev/DLVRD",
+            "stackList": ["Html", "Css", "JavaScript"]
+        },
+        {   
+            "imageSrc": "assets/images/RKB.jpg",
+            "videoSrc": "assets/videos/RKB_854x480.mp4",
+            "linkToHome": "https://vitaliiradaiev.github.io/RKB/dist/",
+            "linkToAllPages": "https://vitaliiradaiev.github.io/RKB/dist/contentPage.html",
+            "linkToGitHub": "https://github.com/VitaliiRadaiev/RKB",
+            "stackList": ["Html", "Css", "JavaScript"]
+        },
+        {   
+            "imageSrc": "assets/images/Comet.jpg",
+            "videoSrc": "assets/videos/Comet_854x480.mp4",
+            "linkToHome": "https://vitaliiradaiev.github.io/CometFx-page/",
+            "linkToAllPages": "https://vitaliiradaiev.github.io/CometFx-page/contentPage.html",
+            "linkToGitHub": "https://github.com/VitaliiRadaiev/CometFx",
+            "stackList": ["Html", "Css", "JavaScript"]
+        },
+        {   
+            "imageSrc": "assets/images/lynx.jpg",
+            "videoSrc": "assets/videos/lynx_854x480.mp4",
+            "linkToHome": "https://vitaliiradaiev.github.io/Lynx/dist/",
+            "linkToAllPages": "https://vitaliiradaiev.github.io/Lynx/dist/",
+            "linkToGitHub": "https://github.com/VitaliiRadaiev/Lynx",
+            "stackList": ["Html", "Css", "JavaScript"]
+        },
+        {   
+            "imageSrc": "assets/images/get-real.jpg",
+            "videoSrc": "assets/videos/get-real_854x480.mp4",
+            "linkToHome": "https://vitaliiradaiev.github.io/GetReal/dist/",
+            "linkToAllPages": "https://vitaliiradaiev.github.io/GetReal/dist/contentPage.html",
+            "linkToGitHub": "https://github.com/VitaliiRadaiev/GetReal",
+            "stackList": ["Html", "Css", "JavaScript"]
+        },
+        {   
+            "imageSrc": "assets/images/top-property.jpg",
+            "videoSrc": "assets/videos/top-property_854x480.mp4",
+            "linkToHome": "https://vitaliiradaiev.github.io/Top-Property-Page/",
+            "linkToAllPages": "https://vitaliiradaiev.github.io/Top-Property-Page/contentPage.html",
+            "linkToGitHub": "https://github.com/VitaliiRadaiev/Top-Property",
+            "stackList": ["Html", "Css", "JavaScript"]
+        },
+        {   
+            "imageSrc": "assets/images/Kuressaare.jpg",
+            "videoSrc": "assets/videos/Kuressaare_854x480.mp4",
+            "linkToHome": "https://vitaliiradaiev.github.io/Keresaare-Page/",
+            "linkToAllPages": "https://vitaliiradaiev.github.io/Keresaare-Page/contentPage.html",
+            "linkToGitHub": "https://github.com/VitaliiRadaiev/Keresaare",
+            "linkToLiveSite": "https://kuressaareteater.ee/",
+            "stackList": ["Html", "Css", "JavaScript"]
+        },
+        {   
+            "imageSrc": "assets/images/DBN.jpg",
+            "videoSrc": "assets/videos/DBN_854x480.mp4",
+            "linkToHome": "https://vitaliiradaiev.github.io/DBN/dist/",
+            "linkToAllPages": "https://vitaliiradaiev.github.io/DBN/dist/contentPage.html",
+            "linkToGitHub": "https://github.com/VitaliiRadaiev/DBN",
+            "stackList": ["Html", "Css", "JavaScript"]
+        },
+        {   
+            "imageSrc": "assets/images/3grams.jpg",
+            "videoSrc": "assets/videos/3grams_854x480.mp4",
+            "linkToHome": "https://vitaliiradaiev.github.io/3Grams/dist/",
+            "linkToAllPages": "https://vitaliiradaiev.github.io/3Grams/dist/contentPage.html",
+            "linkToGitHub": "https://github.com/VitaliiRadaiev/3Grams",
+            "linkToLiveSite": "https://www.3grams.com/",
+            "stackList": ["Html", "Css", "JavaScript"]
+        },
+        {   
+            "imageSrc": "assets/images/asiainn.jpg",
+            "videoSrc": "assets/videos/asiainn_854x480.mp4",
+            "linkToHome": "https://vitaliiradaiev.github.io/AsiainnPage/",
+            "linkToAllPages": "https://vitaliiradaiev.github.io/AsiainnPage/contentPage.html",
+            "linkToGitHub": "https://github.com/VitaliiRadaiev/Asiainn",
+            "stackList": ["Html", "Css", "JavaScript"] 
+        },
+        {   
+            "imageSrc": "assets/images/lurii.jpg",
+            "videoSrc": "assets/videos/lurii_854x480.mp4",
+            "linkToHome": "https://vitaliiradaiev.github.io/LuriiDinis-Page/",
+            "linkToAllPages": "https://vitaliiradaiev.github.io/LuriiDinis-Page/contentPage.html",
+            "linkToGitHub": "https://github.com/VitaliiRadaiev/LuriiDynys",
+            "stackList": ["Html", "Css", "JavaScript"]
+        },
+        {   
+            "imageSrc": "assets/images/amcomri.jpg",
+            "videoSrc": "assets/videos/amcomri_854x480.mp4",
+            "linkToHome": "https://vitaliiradaiev.github.io/Amcomri/dist/",
+            "linkToAllPages": "https://vitaliiradaiev.github.io/Amcomri/dist/contentPage.html",
+            "linkToGitHub": "https://github.com/VitaliiRadaiev/Amcomri",
+            "stackList": ["Html", "Css", "JavaScript"]
+        },
+        {   
             "imageSrc": "assets/images/.jpg",
             "videoSrc": "assets/videos/_854x480.mp4",
             "linkToHome": "",

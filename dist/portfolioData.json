@@ -620,12 +620,59 @@
             "stackList": ["Html", "Css", "JavaScript"]
         },
         {   
-            "imageSrc": "assets/images/.jpg",
-            "videoSrc": "assets/videos/_854x480.mp4",
-            "linkToHome": "",
-            "linkToAllPages": "",
-            "linkToGitHub": "",
-            "linkToLiveSite": "",
+            "imageSrc": "assets/images/surf.jpg",
+            "videoSrc": "assets/videos/surf_854x480.mp4",
+            "linkToHome": "https://vitaliiradaiev.github.io/LandingSurf/",
+            "linkToAllPages": "https://vitaliiradaiev.github.io/LandingSurf/",
+            "linkToGitHub": "https://github.com/VitaliiRadaiev/LandingSurf",
+            "stackList": ["Html", "Css", "JavaScript"]
+        },
+        {   
+            "imageSrc": "assets/images/eurl.jpg",
+            "videoSrc": "assets/videos/eurl_854x480.mp4",
+            "linkToHome": "https://vitaliiradaiev.github.io/EurldArmandPage/",
+            "linkToAllPages": "https://vitaliiradaiev.github.io/EurldArmandPage/",
+            "linkToGitHub": "https://github.com/VitaliiRadaiev/EurldArmandPage",
+            "stackList": ["Html", "Css", "JavaScript"]
+        },
+        {   
+            "imageSrc": "assets/images/tarakan.jpg",
+            "videoSrc": "assets/videos/tarakan_854x480.mp4",
+            "linkToHome": "https://vitaliiradaiev.github.io/TarakanovPage/",
+            "linkToAllPages": "https://vitaliiradaiev.github.io/TarakanovPage/",
+            "linkToGitHub": "https://github.com/VitaliiRadaiev/TarakanovPage",
+            "stackList": ["Html", "Css", "JavaScript"]
+        },
+        {   
+            "imageSrc": "assets/images/ooshi.jpg",
+            "videoSrc": "assets/videos/ooshi_854x480.mp4",
+            "linkToHome": "https://vitaliiradaiev.github.io/Head/",
+            "linkToAllPages": "https://vitaliiradaiev.github.io/Head/",
+            "linkToGitHub": "https://github.com/VitaliiRadaiev/Head",
+            "stackList": ["Html", "Css", "JavaScript"]
+        },
+        {   
+            "imageSrc": "assets/images/shape-up.jpg",
+            "videoSrc": "assets/videos/shape-up_854x480.mp4",
+            "linkToHome": "https://vitaliiradaiev.github.io/LandingShapeUp/",
+            "linkToAllPages": "https://vitaliiradaiev.github.io/LandingShapeUp/",
+            "linkToGitHub": "https://github.com/VitaliiRadaiev/LandingShapeUp",
+            "stackList": ["Html", "Css", "JavaScript"]
+        },
+        {   
+            "imageSrc": "assets/images/freelancer.jpg",
+            "videoSrc": "assets/videos/freelancer_854x480.mp4",
+            "linkToHome": "https://vitaliiradaiev.github.io/LandingFrilancer/",
+            "linkToAllPages": "https://vitaliiradaiev.github.io/LandingFrilancer/",
+            "linkToGitHub": "https://github.com/VitaliiRadaiev/LandingFrilancer",
+            "stackList": ["Html", "Css", "JavaScript"]
+        },
+        {   
+            "imageSrc": "assets/images/fork.jpg",
+            "videoSrc": "assets/videos/fork_854x480.mp4",
+            "linkToHome": "https://vitaliiradaiev.github.io/LandingFork/",
+            "linkToAllPages": "https://vitaliiradaiev.github.io/LandingFork/",
+            "linkToGitHub": "https://github.com/VitaliiRadaiev/LandingFork",
             "stackList": ["Html", "Css", "JavaScript"]
         }
     ]

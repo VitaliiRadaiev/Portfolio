@@ -976,30 +976,30 @@ window.addEventListener("DOMContentLoaded", () => {
 
     document.body.classList.add('page-loaded');
 
-    let animationId;
+    // let animationId;
 
-    function smoothScroll() {
-        document.documentElement.style.setProperty('scroll-behavior', 'auto');
+    // function smoothScroll() {
+    //     document.documentElement.style.setProperty('scroll-behavior', 'auto');
 
-        function scroll() {
-            window.scrollBy(0, 6);
+    //     function scroll() {
+    //         window.scrollBy(0, 6);
             
-            animationId = requestAnimationFrame(scroll); 
-        }
+    //         animationId = requestAnimationFrame(scroll); 
+    //     }
 
-        scroll();
-    }
+    //     scroll();
+    // }
 
-    window.addEventListener('keydown', (e) => {
-        if (e.key === 'ArrowDown') {
-            e.preventDefault();
-            smoothScroll();
-        }
+    // window.addEventListener('keydown', (e) => {
+    //     if (e.key === 'ArrowDown') {
+    //         e.preventDefault();
+    //         smoothScroll();
+    //     }
 
-        if(e.key === 'ArrowUp') {
-            e.preventDefault();
-            cancelAnimationFrame(animationId);
-            animationId = null; 
-        }
-    });
+    //     if(e.key === 'ArrowUp') {
+    //         e.preventDefault();
+    //         cancelAnimationFrame(animationId);
+    //         animationId = null; 
+    //     }
+    // });
 }); 

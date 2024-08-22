@@ -31,7 +31,7 @@ const path = {
 		fonts: project_name + "/assets/fonts/"
 	},
 	src: {
-		html: [src_folder + "/*.{html,json}", "!" + src_folder + "/_*.html"],
+		html: [src_folder + "/*.{html,json,pdf}", "!" + src_folder + "/_*.html"],
 		js: [src_folder + "/assets/js/app.js", src_folder + "/assets/js/vendors.js"],
 		css: src_folder + "/assets/scss/style.scss",
 		images: [src_folder + "/assets/images/**/*.{jpg,png,svg,gif,ico,webp}", "!**/favicon.*"],

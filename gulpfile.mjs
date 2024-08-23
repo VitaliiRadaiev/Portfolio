@@ -31,7 +31,7 @@ const path = {
 		fonts: project_name + "/assets/fonts/"
 	},
 	src: {
-		html: [src_folder + "/*.{html,json,pdf}", "!" + src_folder + "/_*.html"],
+		html: [src_folder + "/*.{html,json}", "!" + src_folder + "/_*.html"],
 		js: [src_folder + "/assets/js/app.js", src_folder + "/assets/js/vendors.js"],
 		css: src_folder + "/assets/scss/style.scss",
 		images: [src_folder + "/assets/images/**/*.{jpg,png,svg,gif,ico,webp}", "!**/favicon.*"],
@@ -72,7 +72,8 @@ export const refresh = (done) => {
 }
 
 export function html() {
-	return src(path.src.html, {})
+	return src(path.src.html, { encoding: false })
+		.pipe(plumber())
 		.pipe(fileinclude())
 		.pipe(dest(path.build.html))
 		.pipe(sync.stream());
@@ -123,6 +124,13 @@ export function images() {
 		.pipe(newer(path.build.images))
 		.pipe(dest(path.build.images))
 		.pipe(sync.stream())
+}
+
+export function pdf() {
+	return src('src/*.pdf', { encoding: false })
+		.pipe(plumber())
+		.pipe(newer('dist'))
+		.pipe(dest('dist'))
 }
 
 export function icons() {
@@ -201,7 +209,8 @@ export function build(done) {
             images,
             icons,
 			videos,
-            fonts
+            fonts,
+			pdf
         ),
 		css,
         fontstyle

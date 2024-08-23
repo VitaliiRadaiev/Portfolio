@@ -39,4 +39,36 @@
 		],
 		"description": ""
 	},
+	"minQuery": {
+		"scope": "css,scss",
+		"prefix": "mmin",
+		"body": [
+			"@media (min-width: $$mq-$1) {",
+			"	$2",
+			"}"
+		],
+		"description": ""
+	},
+	"maxQuery": {
+		"scope": "css,scss",
+		"prefix": "mmax",
+		"body": [
+			"@media (max-width: $1) {",
+			"	$2",
+			"}"
+		],
+		"description": ""
+	},
+	"hover": {
+		"scope": "css,scss",
+		"prefix": "minh",
+		"body": [
+			"@media #{$$mouse-device} {",
+			"	&:hover {",
+			"		$2",
+			"	}",
+			"}"
+		],
+		"description": ""
+	},
 }

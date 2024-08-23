@@ -8,7 +8,7 @@
             if (!src) return;
 
             if ($li.player) {
-                if($li.player.paused()) {
+                if ($li.player.paused()) {
                     $li.player.play();
                 }
             } else {
@@ -108,6 +108,8 @@
 
             const loadDataItems = data.slice(loadedItemsCount, loadedItemsCount + 4);
 
+            const language = $portfolioList.getAttribute('data-language');
+
             loadDataItems.forEach(data => {
                 const $li = document.createElement('li');
                 $li.insertAdjacentHTML('beforeend', `
@@ -121,14 +123,19 @@
                         </a>
                         <div class="portfolio-card__footer">
                             <div class="portfolio-card__stack-list">
-                                <span>Stack:</span>
+                                <span>${language === 'en' ? 'Stack' : 'Стек'}:</span>
                                 ${data.stackList.map(i => `<span>${i}</span>`).join('')}
                             </div>
 
                             ${data.linkToAllPages
                         ? `
                                     <a href="${data.linkToAllPages}" target="_blank" class="portfolio-card__link-to-all">
-                                        Show all pages
+                                        ${  language === 'en' ? 
+                                                'Show all pages' : 
+                                            language === 'ru' ? 
+                                                'Показать все страницы' : 
+                                                'Показати всі сторінки'
+                                        }     
                                     </a>
                                 `
                         : ""
@@ -144,7 +151,12 @@
                             ${data.linkToLiveSite
                         ? `
                                     <a href="${data.linkToLiveSite}" target="_blank" class="portfolio-card__link-to-all">
-                                        Live site
+                                        ${  language === 'en' ? 
+                                                'Live site' : 
+                                            language === 'ru' ? 
+                                                'Живой сайт' : 
+                                                'Живий сайт'
+                                        } 
                                     </a>
                                 `
                         : ""
@@ -171,7 +183,7 @@
 
             for (let index = 0; index < $portfolioList.children.length; index++) {
                 const $videoContainer = $portfolioList.children[index];
-                
+
                 const rect = $videoContainer.getBoundingClientRect();
                 const videoCenter = rect.top + rect.height / 2;
 
@@ -188,9 +200,9 @@
 
             for (let index = 0; index < $portfolioList.children.length; index++) {
                 const $videoContainer = $portfolioList.children[index];
-                
+
                 if ($videoContainer === $closestVideoContainer) {
-                    if(!$videoContainer.timeId) {
+                    if (!$videoContainer.timeId) {
                         $videoContainer.timeId = setTimeout(() => {
                             initAndStartVideo($videoContainer);
                             $videoContainer?.imageContainer?.classList.add('hide');
@@ -202,7 +214,7 @@
                     $videoContainer?.player?.pause();
                     $videoContainer?.imageContainer?.classList.remove('hide');
                 }
-            }            
+            }
         }
 
         const scrollHandler = throttle(() => {

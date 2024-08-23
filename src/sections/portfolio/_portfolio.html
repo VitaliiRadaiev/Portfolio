@@ -1,0 +1,21 @@
+    
+    <section class="portfolio py-20">
+        <div class="container">
+            <h2 class="h2 text-center">
+                @@if(language === 'en') {
+                    My works 
+                }
+                @@if(language === 'ru') {
+                    Мои работы
+                }
+                @@if(language === 'ua') {
+                    Мої роботи
+                }
+            </h2>
+
+            <ul class="portfolio__list" data-language="@@language"></ul>
+            <div data-load-more-trigger>
+                @@include('../../components/loader/_loader.html', {})
+            </div>
+        </div>
+    </section>

@@ -7,103 +7,13 @@
 <body>
     @@include('components/loader/_page-loader.html', {})
 
-    @@include('sections/header/_header.html', {})
+    @@include('sections/header/_header.html', { "language": "en" })
 
-    <section class="intro pb-20">
-        <div class="container">
-            <div class="intro__body">
-                <div class="intro__content">
-                    <h1 class="intro__title">Hello! My name is Vitaliy, and I am a Frontend Developer.</h1>
-                    <div class="intro__text text-content">
-                        <p>
-                            I specialize in developing <strong>interfaces for WordPress</strong>, offering high-quality and precise layout services. I see all projects through to completion, regardless of their duration. With over <strong>5 years of experience</strong> and a range of diverse projects, I create solutions that are easy to scale and adapt to changing project requirements. My layouts are always structured and clear, helping the entire development team quickly implement functionality and maintain the project efficiently.
-                        </p>
-                    </div>
-                    <button class="btn-default">Download CV</button>
-                </div>
-                <div class="intro__image">
-                    <span class="shadow-left"></span>
-                    <span class="shadow-right"></span>
-                    <span class="shadow-bottom"></span>
+    @@include('sections/intro/_intro.html', { "language": "en" })
 
-                    <div class="intro__image-inner">
-                        <img src="assets/images/me.webp" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    @@include('sections/stack/_stack.html', { "language": "en" })
 
-    <section class="stack py-20">
-        <div class="container">
-            <h2 class="h2 text-center">
-                My stack of technology 
-            </h2>
-            <ul class="stack__list">
-                <li>
-                    <div class="stack__icon">
-                        <img src="assets/icons/icons8-javascript.svg" alt="">
-                    </div>
-                    <div class="stack__title">Java Script</div>
-                </li>
-                <li>
-                    <div class="stack__icon">
-                        <img src="assets/icons/icons8-typescript.svg" alt="">
-                    </div>
-                    <div class="stack__title">Type Script</div>
-                </li>
-                <li>
-                    <div class="stack__icon">
-                        <img src="assets/icons/icons8-react.svg" alt="">
-                    </div>
-                    <div class="stack__title">React</div>
-                </li>
-                <li>
-                    <div class="stack__icon">
-                        <img src="assets/icons/icons8-next.js.svg" alt="">
-                    </div>
-                    <div class="stack__title">NextJs</div>
-                </li>
-                <li>
-                    <div class="stack__icon">
-                        <img src="assets/icons/icons8-gulp.svg" alt="">
-                    </div>
-                    <div class="stack__title">Gulp</div>
-                </li>
-                <li>
-                    <div class="stack__icon">
-                        <img src="assets/icons/icons8-css.svg" alt="">
-                    </div>
-                    <div class="stack__title">Css</div>
-                </li>
-                <li>
-                    <div class="stack__icon">
-                        <img src="assets/icons/icons8-sass.svg" alt="">
-                    </div>
-                    <div class="stack__title">Sass</div>
-                </li>
-                <li>
-                    <div class="stack__icon">
-                        <img src="assets/icons/icons8-tailwindcss.svg" alt="">
-                    </div>
-                    <div class="stack__title">TailwindCss</div>
-                </li>
-            </ul>
-        </div>
-    </section>
-
-    <section class="portfolio py-20">
-        <div class="container">
-            <h2 class="h2 text-center">
-                My works
-            </h2>
-
-            <ul class="portfolio__list"></ul>
-            <div data-load-more-trigger>
-                @@include('components/loader/_loader.html', {})
-            </div>
-        </div>
-    </section>
+    @@include('sections/portfolio/_portfolio.html', { "language": "en" })
 </body>
 
 </html>

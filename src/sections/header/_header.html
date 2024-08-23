@@ -2,22 +2,42 @@
     <div class="container">
         <div class="header__body">
             <div class="header__logo">
-                Vitalii
+                Vitaliy
                 <br>
                 Radaiev
             </div>
             <div class="header__language">
                 <div class="header__language-current">
-                    En
+                    @@if(language === 'en') {
+                        En
+                    }
+                    @@if(language === 'ru') {
+                        Ru
+                    }
+                    @@if(language === 'ua') {
+                        Ua
+                    }
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                         stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
                     </svg>
                 </div>
                 <ul class="header__language-list">
-                    <li>
-                        <a href="#">Ua</a>
-                    </li>
+                    @@if(language !== 'en') {
+                        <li>
+                            <a href="index.html">En</a>
+                        </li>
+                    }
+                    @@if(language !== 'ru') {
+                        <li>
+                            <a href="index-ru.html">Ru</a>
+                        </li>
+                    }
+                    @@if(language !== 'ua') {
+                        <li>
+                            <a href="index-ua.html">Ua</a>
+                        </li>
+                    }
                 </ul>
             </div>
             <div class="header__title">

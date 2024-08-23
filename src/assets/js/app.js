@@ -17,6 +17,7 @@ window.addEventListener("DOMContentLoaded", () => {
     replaceImageToInlineSvg('.img-svg');
     initSmoothScrollByAnchors();
     initAnchorsLinkOffset();
+    initToggleClassesByClick();
 
     // ==== components =====================================================
 

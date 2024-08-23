@@ -1,0 +1,67 @@
+<section class="intro pb-20">
+    <div class="container">
+        <div class="intro__body">
+            <div class="intro__content">
+                <h1 class="intro__title">
+                    @@if(language === 'en') {
+                        Hello! My name is Vitaliy, and I am a Frontend Developer.
+                    }
+                    @@if(language === 'ru') {
+                        Здравствуйте! Меня зовут Виталий, я Frontend-разработчик.
+                    }
+                    @@if(language === 'ua') {
+                        Привіт! Мене звуть Віталій, я Frontend-розробник.
+                    }
+
+                </h1>
+                <div class="intro__text text-content last-no-margin">
+                    <p>
+                        @@if(language === 'en') {
+                            I specialize in developing <strong>interfaces for WordPress</strong>, offering high-quality and
+                            precise layout services. I see all projects through to completion, regardless of their duration.
+                            With over <strong>5 years of experience</strong> and a range of diverse projects, I create
+                            solutions that are easy to scale and adapt to changing project requirements. My layouts are
+                            always structured and clear, helping the entire development team quickly implement functionality
+                            and maintain the project efficiently.
+                        }
+                        @@if(language === 'ru') {
+                            Я специализируюсь на разработке интерфейсов под WordPress, предлагая услуги по качественной и аккуратной верстке. Все проекты, за которые берусь, довожу до конца, независимо от их продолжительности. Более 5 лет опыта и работа с разнообразными проектами позволяют мне создавать решения, которые легко масштабировать и адаптировать под изменяющиеся требования проекта. Мои макеты всегда структурированы и понятны, что помогает всей команде разработчиков быстрее внедрять функциональность и поддерживать проект в дальнейшем.
+                        }
+                        @@if(language === 'ua') {
+                            Я спеціалізуюся на розробці інтерфейсів під WordPress, пропонуючи послуги з якісної та акуратної верстки. Усі проєкти, за які беруся, доводжу до кінця, незалежно від їхньої тривалості. Понад 5 років досвіду та робота з різноманітними проєктами дозволяють мені створювати рішення, які легко масштабувати та адаптувати під змінні вимоги проєкту. Мої макети завжди структуровані та зрозумілі, що допомагає всій команді розробників швидко впроваджувати функціональність і підтримувати проєкт у подальшому.
+                        }
+                    </p>
+                </div>
+                <button class="intro__btn btn-default" data-action="add-classes-by-click" data-target="_self"
+                    data-classes="active">
+                    <div class="intro__btn-text">
+                        @@if(language === 'en') {
+                            Download CV
+                        }
+                        @@if(language === 'ru') {
+                            Скачать CV
+                        }
+                        @@if(language === 'ua') {
+                            Завантажити CV
+                        } 
+                    </div>
+                    <div class="intro__btn-links">
+                        <a href="./CV-EN.pdf" download="CV-EN">En</a>
+                        <a href="./CV-RU.pdf" download="">Ru</a>
+                        <a href="./CV-UA.pdf" download="">Ua</a>
+                    </div>
+                </button>
+            </div>
+            <div class="intro__image">
+                <span class="shadow-left"></span>
+                <span class="shadow-right"></span>
+                <span class="shadow-bottom"></span>
+                <span class="shadow-top"></span>
+
+                <div class="intro__image-inner">
+                    <img src="assets/images/me.webp" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
